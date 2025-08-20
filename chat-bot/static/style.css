@@ -71,7 +71,7 @@ body {
 
 /* Tú (derecha - verde) */
 .user-message {
-    align-self: flex-end;
+    align-self: center;
     background-color: #dcf8c6;
     color: #000;
 }
