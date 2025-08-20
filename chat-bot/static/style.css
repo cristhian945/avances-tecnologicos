@@ -48,6 +48,8 @@ body {
     padding: 20px;
     overflow-y: auto;
     background-color: rgba(245, 245, 245, 0.7);
+    display: flex;
+    flex-direction: column;
 }
 
 /* Mensajes con mejor diseño */
@@ -71,7 +73,7 @@ body {
 
 /* Tú (derecha - verde) */
 .user-message {
-    align-self: center;
+    align-self: flex-end;
     background-color: #dcf8c6;
     color: #000;
 }
