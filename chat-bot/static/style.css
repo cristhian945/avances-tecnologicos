@@ -32,6 +32,46 @@ body {
     overflow: hidden;
 }
 
+/* Selector de IA - NUEVO (se integra con tu diseño) */
+.ai-selector {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ai-selector label {
+    font-weight: bold;
+    color: white;
+    font-size: 0.9em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#ai-select {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #2c3e50;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#ai-select:hover {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#ai-select:focus {
+    background: white;
+    box-shadow: 0 0 0 3px rgba(110, 142, 251, 0.3);
+}
+
 /* Cabecera con estilo moderno */
 .chat-header {
     background: linear-gradient(135deg, #6e8efb, #a777e3);
@@ -63,14 +103,6 @@ body {
     word-wrap: break-word;
 }
 
-.message {
-    max-width: 70%;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    border-radius: 18px;
-    word-wrap: break-word;
-}
-
 /* Tú (derecha - verde) */
 .user-message {
     align-self: flex-end;
@@ -78,6 +110,13 @@ body {
     color: #000;
 }
 
+/* Bot (izquierda - gris) */
+.bot-message {
+    align-self: flex-start;
+    background-color: #ffffff;
+    color: #000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
 /* Área de entrada mejorada */
 .input-area {
