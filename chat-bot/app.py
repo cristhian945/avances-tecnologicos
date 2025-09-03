@@ -39,7 +39,10 @@ def ask_gemini(user_message):
         return "Gemini API Key no configurada."
     try:
         response = gemini_model.generate_content(user_message)
-        return response.text if hasattr(response, "text") else str(response)
+        text = response.text if hasattr(response, "text") else str(response)
+        # Elimina la etiqueta [IA: gemini] si aparece
+        text = text.replace('[IA: gemini]', '').strip()
+        return text
     except Exception as e:
         print(f"❌ Error consultando Gemini: {e}")
         return "Error consultando Gemini"
